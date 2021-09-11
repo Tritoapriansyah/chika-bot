@@ -16,6 +16,7 @@ let welcome = JSON.parse(fs.readFileSync('./database/welcome.json'));
 let setting = JSON.parse(fs.readFileSync('./config.json'));
 let _afk = JSON.parse(fs.readFileSync('./database/afk.json'));
 let blocked = [];
+var port = process.env.PORT || 8080
 
 global.xinz = new WAConnection()
 xinz.mode = 'public'
